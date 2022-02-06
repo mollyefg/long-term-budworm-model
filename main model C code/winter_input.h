@@ -8,9 +8,9 @@ Params = (STRUCTURE*) Paramstuff;
 //////////////// changeable parameters:
 int lag=10;	// lag between the defoliation occurrence and the effect on fires - goes into an algorithm
 
-int defol_switch=0; // if zero, no defoliation; if 1, defoliation occurs
+int defol_switch=1; // if zero, no defoliation; if 1, defoliation occurs
 
-int which_file = 1; // the order is: 0-2: past, central-east-north;
+int which_file = 3; // the order is: 0-2: past, central-east-north;
 					//                3-5: future, central-east-north
 
 

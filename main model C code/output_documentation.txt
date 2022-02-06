@@ -1,0 +1,18 @@
+outputs:
+
+simulations:
+%d, %e, %e, %e, %e, %e, %e, %e, %d, %e, %d, %d, %e, %e
+years, Hnext, Pnext1 + Pnext2, deadcount, emptycount, alivecount, avg_aliveforest, alivesum, fire[years], current_defoliation, deaths, germinations, mean_char_height, adj_defol
+
+trees:
+// print the tree size before it's updated in the matrix, and then whether it died this year
+%d, %d, %d, %d, %d, %d, %e, %e
+years, i, j, Params.lifematrix[i][j], lifemat, death_occurs, Params.forest[i][j], treeend
+
+final: compiles all the simulations with identical parameter sets
+%e, %e, %d, %e, %e, %e, %e, %e, %e, %e,  %e, %e, %e, %e, %e
+AvgPd, AvgAmp, maxyears,final_alivecount, final_avg_aliveforest, final_CValive, final_avg_Qmortperhost, final_avg_Qmortpermort, num_fires, fire_interval,  maxtrees, Hnext, Winterpars.PARS2[0], Winterpars.PARS2[1], AvgMaxDefol
+
+
+weather tables:
+fire weather index, drought code, CH3, and CH4

@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#SBATCH --job-name=fixed_G1_wdefol_future_north_upcoeffs
-#SBATCH --error=fixed_G1_wdefol_future_north_upcoeffs
+#SBATCH --job-name=wtree
+#SBATCH --error=wtree
 #SBATCH --time=2:00:00
-#SBATCH --array=1-5
+#SBATCH --array=1-100
 #SBATCH --ntasks=1
 #SBATCH --partition=broadwl
 
