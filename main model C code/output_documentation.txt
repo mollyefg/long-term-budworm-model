@@ -1,3 +1,8 @@
+inputs:
+
+weather tables:
+fire weather index, drought code, CH3, and CH4
+
 outputs:
 
 simulations:
@@ -12,7 +17,3 @@ years, i, j, Params.lifematrix[i][j], lifemat, death_occurs, Params.forest[i][j]
 final: compiles all the simulations with identical parameter sets
 %e, %e, %d, %e, %e, %e, %e, %e, %e, %e,  %e, %e, %e, %e, %e
 AvgPd, AvgAmp, maxyears,final_alivecount, final_avg_aliveforest, final_CValive, final_avg_Qmortperhost, final_avg_Qmortpermort, num_fires, fire_interval,  maxtrees, Hnext, Winterpars.PARS2[0], Winterpars.PARS2[1], AvgMaxDefol
-
-
-weather tables:
-fire weather index, drought code, CH3, and CH4
