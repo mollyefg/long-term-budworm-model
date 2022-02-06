@@ -765,15 +765,15 @@ for(years=0; years<maxyears ; years++){					//////////////////////////////  The 
 	//logit_fire_prob = -1.81521 + 0.40747*adj_dc + 0.32745*adj_fwi; // original formula with NO DEFOLIATION EFFECT
 	//logit_fire_prob = 0.17817*adj_defol + 0.40747*adj_dc + 0.32745*adj_fwi; // original formula with NO INTERCEPT
 
-	// fuck around and set defoliation = 0
+	// set defoliation = 0
 	// controlled now in the input file
 	if(Params.defol_switch==0){
 		adj_defol = 0.0;
 		printf("no defoliation\n");
 		}
 
-	//logit_fire_prob = -2.5 + 0.17817*adj_defol + 0.40747*adj_dc + 0.32745*adj_fwi; // 'down coeffs' - used for most simulations
-	logit_fire_prob = -3.0 + 1.78*adj_defol + .407*adj_dc + 3.27*adj_fwi; // UP COEFFS
+	//logit_fire_prob = -2.5 + 0.17817*adj_defol + 0.40747*adj_dc + 0.32745*adj_fwi; // 'down coeffs'
+	logit_fire_prob = -3.0 + 1.78*adj_defol + .407*adj_dc + 3.27*adj_fwi; // UP COEFFS --- used for most simulations
 
 	double fire_prob = 1/(1 + exp(-logit_fire_prob));
 
