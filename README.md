@@ -3,6 +3,14 @@ Code and files associated with the long-term dynamics of jack pine budworm
 
 The full model code and associated data files are located in 'main model C code'. The script uses a gcc compiler and requires gsl routines.
 
+Compile the script with the command: 
+./BatchMake_beast.sh long_model_main
+
+You can then run the script interactively, or edit the job.sbatch file as needed to select the number of jobs, output names, etc. Submit with the command:
+sbatch job.sbatch
+
+----
+
 The main file is long_model_main.c
 
 In the winter_input.h file, you can turn defoliation on and off with the 'defol_switch' parameter on line 11, and choose the weather conditions with the which_file parameter (past/future, and central/east/north) on line 13. The lagging defoliation effect as it applies to the fire probability can also be changed in this file if necessary, but this doesn't have a noticeable impact on outcomes. 
